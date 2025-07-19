@@ -271,54 +271,128 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.single-about-txt*/
 
 /*.single-about-img */
-.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
+.single-about-img {
+    position: relative;
+    box-shadow: 0 5px 20px rgba(14,25,80,.30);
+    width: 100%;
+    max-width: 625px; 
+    margin: 0 auto;
+    border-radius: 12px; /* Added circular corners for container */
+    overflow: hidden; /* Ensures child elements respect border radius */
+}
+
 .single-about-img:before {
-    position:  absolute;
+    position: absolute;
     content: " ";
     top: 0;
-    left:  0;
-    width: 109%;
-    height:  100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(31,44,108,.3);
+    border-radius: 12px; /* Match container radius */
 }
+
 .single-about-img img {
-    max-width: 500px;
-    height: 468px;
+    width: 100%;
+    height: auto;
+    max-height: 585px; 
+    object-fit: cover;
+    display: block;
+    border-radius: 12px 12px 0 0; /* Only round top corners */
 }
-.about-list-icon{
+
+/* Icon Container */
+.about-list-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 109%;
-    height: 90px;
+    width: 100%;
+    height: 80px; 
     background: #1f2c6c;
+    border-radius: 0 0 12px 12px; /* Only round bottom corners */
 }
-/*.ab-list-icon */
+
+/* Icon List */
 .about-list-icon ul {
     display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
-.about-list-icon  ul li a {
-    padding-right: 22px;
-    cursor:pointer;
-    color: #fff;
-}
+
+/* Individual Icons - Now with perfect circles */
 .about-list-icon ul li a {
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px; 
+    height: 44px;
+    margin: 0 15px; /* Adjusted spacing */
+    background: rgba(255,255,255,0.1);
     color: #fff;
-    display: inline-block;
-    border: 2px solid;
-    margin-left: 20px;
-    border-radius: 8px;
-    width: 30px;
-    height: 30px;
-    line-height: 28px;
-    text-align: center;
+    border-radius: 50%; /* Perfect circle */
+    border: 2px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
+
+/* Icon Hover Effects */
+.about-list-icon ul li a:hover {
+    background: #b636ff;
+    border-color: #b636ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Icon Content */
 .about-list-icon ul li a i {
-    margin-left: 6px;
+    font-size: 18px; /* Slightly larger icons */
+    margin: 0; /* Remove old margin */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .single-about-img,
+    .single-about-img:before {
+        border-radius: 10px;
+    }
+    .single-about-img img {
+        border-radius: 10px 10px 0 0;
+    }
+    .about-list-icon {
+        border-radius: 0 0 10px 10px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-about-img,
+    .single-about-img:before {
+        border-radius: 8px;
+    }
+    .single-about-img img {
+        border-radius: 8px 8px 0 0;
+    }
+    .about-list-icon {
+        border-radius: 0 0 8px 8px;
+        height: 90px;
+    }
+    .about-list-icon ul li a {
+        width: 40px;
+        height: 40px;
+        margin: 0 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-list-icon ul li a {
+        width: 36px;
+        height: 36px;
+        margin: 0 8px;
+    }
 }
 /*.ab-list-icon */
 
