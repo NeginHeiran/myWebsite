@@ -120,11 +120,12 @@ nav.navbar.bootsnav {
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
     color: #d92cf9;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     padding: 33px 0px 57px;
     text-transform: uppercase;
 }
+
 /*.navbar-brand*/
 
 /*.nav li*/
@@ -610,18 +611,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .project-content {padding-top: 100px;}
 
 /* ---- .item ---- */
-.isotope:after {
+.isotopep:after {
     content: '';
     display: block;
     clear: both;
 }
-.isotope .item {
+.isotopep .item {
     position:relative;
     overflow:hidden;
     margin-bottom: 30px;
 }
 /*.item img*/
-.isotope .item img{
+.isotopep .item img{
     width:100%;
     height:100%;
     -webkit-transition: .5s;
@@ -630,7 +631,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -o-transition: .5s;
     transition: .5s;
 }
-.isotope .item:hover  img{
+.isotopep .item:hover  img{
     -webkit-transform:scale(1.5);
     -moz-transform:scale(1.5);
     -ms-transform:scale(1.5);
@@ -638,8 +639,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform:scale(1.5);
 }/*.item img*/
 
-/*.isotope-overlay*/
-.isotope-overlay{
+
+/*.isotopep-overlay*/
+.isotopep-overlay{
     position:absolute;
     height:100%;
     width:100%;
@@ -660,21 +662,79 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -o-transition: .5s;
     transition: .5s;
 }
-.isotope-overlay a {
+.isotopep-overlay a {
     display: inline-block;
     color: #fff;
     font-size: 14px;
     text-align: center;
 }
-.isotope .item:hover .isotope-overlay{
+
+.isotopep .item:hover .isotopep-overlay{
     -webkit-transform:scale(1);
     -moz-transform:scale(1);
     -ms-transform:scale(1);
     -o-transform:scale(1);
     transform:scale(1);
     top:0;
-}/*.isotope-overlay*/
+}/*.isotopep-overlay*/
 
+/* Button styles */
+.overlayp-button.button-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 5px 0;
+    background: rgb(182, 54, 255);
+    color: #ffff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-transform: initial;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    min-height: 40px;
+    text-align: center;
+}
+
+.overlayp-button.button-primary:hover {
+    background: #b636ff;
+    color: rgba(31,44,108);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(31,44,108,.5);
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+}
+
+/* Secondary button style */
+.overlayp-button.button-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 5px 0;
+    background: rgb(182, 54, 255);
+    color: #ffff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-transform: initial;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    min-height: 40px;
+    text-align: center;
+}
+
+.overlayp-button.button-secondary:hover {
+    background: #b636ff;
+    color: rgba(31,44,108);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(31,44,108,.5);
+}
 
 /*-------------------------------------
         9. Startups
