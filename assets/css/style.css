@@ -774,13 +774,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -ms-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
+    border-radius: 12px; /* Added circular corners for container */
 }
 .isotope .item:hover  img{
-    -webkit-transform:scale(1.5);
-    -moz-transform:scale(1.5);
-    -ms-transform:scale(1.5);
-    -o-transform:scale(1.5);
-    transform:scale(1.5);
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+    border-radius: 12px; /* Added circular corners for container */
 }/*.item img*/
 
 /*.isotope-overlay*/
@@ -804,12 +806,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -ms-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
+    border-radius: 12px; /* Added circular corners for container */
 }
 .isotope-overlay a {
     display: inline-block;
     color: #fff;
     font-size: 14px;
     text-align: center;
+    border-radius: 12px; /* Added circular corners for container */
 }
 .isotope .item:hover .isotope-overlay{
     -webkit-transform:scale(1);
@@ -818,6 +822,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -o-transform:scale(1);
     transform:scale(1);
     top:0;
+    border-radius: 12px; /* Added circular corners for container */
 }/*.isotope-overlay*/
 
 /*-------------------------------------
